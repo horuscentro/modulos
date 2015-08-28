@@ -1,0 +1,4 @@
+  cd /usr/src/linux
+    make LINUXDIR=/lib/modules/`uname -r`/build DRM_MODULES=via
+    cp *.ko /lib/modules/`uname -r`/kernel/drivers/char/drm/
+    depmod -ae
